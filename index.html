@@ -1,0 +1,38 @@
+<!-- Змінено структуру HTML для відображення списку та редагування даних -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Student Management App</h1>
+    <div>
+        <h2>Add Student</h2>
+        <input type="text" id="nameInput" placeholder="NAME">
+        <input type="text" id="surnameInput" placeholder="SURNAME">
+        <input type="text" id="ageInput" placeholder="AGE">
+        <input type="text" id="kursInput" placeholder="KURS">
+        <button id="sumbitBtn" type="submit">SUMBIT</button>
+    </div>
+    <div>
+
+        <h2>Student List</h2>
+        <button id="listBtn" >list Sdudent</button>
+        <table id="studentTable">
+    
+
+        </table>
+    </div>
+
+    <!-- Modal for editing student data -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <!-- Form for editing student data -->
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
