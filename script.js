@@ -1,4 +1,4 @@
-// import data from "./students.json";
+import students from "./students.json" assert { type: "json" };
 
 const nameInput = document.querySelector("#nameInput");
 const surnameInput = document.querySelector("#surnameInput");
