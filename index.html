@@ -1,38 +1,35 @@
-<!-- Змінено структуру HTML для відображення списку та редагування даних -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Management App</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
-    <h1>Student Management App</h1>
-    <div>
-        <h2>Add Student</h2>
-        <input type="text" id="nameInput" placeholder="NAME">
-        <input type="text" id="surnameInput" placeholder="SURNAME">
-        <input type="text" id="ageInput" placeholder="AGE">
-        <input type="text" id="kursInput" placeholder="KURS">
-        <button id="sumbitBtn" type="submit">SUMBIT</button>
-    </div>
-    <div>
+    <ul class="list">
 
-        <h2>Student List</h2>
-        <button id="listBtn" >list Sdudent</button>
-        <table id="studentTable">
-    
-
-        </table>
+    </ul>
+    <ul class="menu">
+        <li id="add"><button>Add Card</button></li>
+        <li id="edit"><button>Edit Card</button></li>
+        <li id="minus"><button>Delete Card</button></li>
+    </ul>
+    <div class="modil cliose">
+        <form>
+            <h2 id="title">Add Card</h2>
+            <ul>
+                <li><input minlength="3" type="text" class="card" placeholder="name" required /></li>
+                <li><input minlength="3" type="text" class="card" placeholder="surname" required /></li>
+                <li><input min="1" max="99" type="number" class="card" placeholder="age" required /></li>
+                <li><input minlength="3" type="text" class="card" placeholder="course" required /></li>
+                <li><input minlength="3" type="text" class="card" placeholder="facultayti" required /></li>
+            </ul>
+            <button type="submit" id="submit">Submit</button>
+        </form>
     </div>
 
-  
-    <div id="editModal" class="modal">
-        <div class="modal-content">
-       
-        </div>
-    </div>
-    <script src="./script.js"></script>
-</body>
+    <script src="./src/index.js" type="module"></script>
+    </body>
 </html>
