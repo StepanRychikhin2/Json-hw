@@ -41,12 +41,13 @@ let cardList = [];
 del.addEventListener("click", () => {
     const cards = document.querySelectorAll(".item");
     for (const i of cards) {
-        i.classList.add("hov");
+        // i.classList.add("hov");
         i.addEventListener("click", () => {
             index = i.id;
             cardList.splice(index, index + 1);
             reloadCards(cardList);
             json = JSON.stringify(cardList);
+            console.log(json);
         });
     }
 });
@@ -95,9 +96,10 @@ submit.addEventListener("click", (e) => {
         };
         }
         json = JSON.stringify(cardList);
+        console.log(json);
     }
     else {
-       console.log(111);
+       alert("Заповніть поля всі")
     }
     reloadCards(cardList);
 });
