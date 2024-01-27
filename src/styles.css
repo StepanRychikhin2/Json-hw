@@ -14,14 +14,7 @@
 
 
 .menu {
-    position: fixed;
-    left: 5px;
-    bottom: 5px;
     list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
 }
 
 
