@@ -2,7 +2,7 @@ import students from "./students.json" assert { type: "json" };
 
 const add = document.querySelector("#add");
 const edit = document.querySelector("#edit");
-const minus = document.querySelector("#minus");
+const del = document.querySelector("#del");
 const submit = document.querySelector("#submit");
 const modil = document.querySelector(".modil");
 const info = document.querySelectorAll(".card");
@@ -38,7 +38,7 @@ add.addEventListener("click", () => {
 });
 let cardList = [];
 
-minus.addEventListener("click", () => {
+del.addEventListener("click", () => {
     const cards = document.querySelectorAll(".item");
     for (const i of cards) {
         i.classList.add("hov");
